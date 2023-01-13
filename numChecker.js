@@ -1,7 +1,6 @@
 const num=371;
-console.log(isPrime(num));
-console.log(isArmstrong(num));
-function isPrime(n){
+
+let isPrime=(n)=>{
     if(n===2){
         return true;
     }
@@ -12,7 +11,7 @@ function isPrime(n){
     }
     return true;
 }
-function isArmstrong(n){
+let isArmstrong=n=>{
     let sumCube=0;
     let temp=n;
     let length=Math.floor(1+Math.log10(n))
@@ -23,3 +22,6 @@ function isArmstrong(n){
     }
     return sumCube==n;
 }
+console.log(isPrime(num));
+console.log(isArmstrong(num));
+// const fn =()=>true;
